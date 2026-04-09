@@ -1,0 +1,20 @@
+{
+  "name": "cisco-aws-secure-monitoring",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm --workspace @monitoring/api run dev",
+    "dev:web": "npm --workspace @monitoring/web run dev",
+    "dev:source": "npm --workspace @monitoring/source run dev",
+    "dev:simulator": "npm --workspace @monitoring/simulator run dev",
+    "build": "npm run build --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ListArchiveBucket",
+      "Effect": "Allow",
+      "Action": [
+        "s3:ListBucket"
+      ],
+      "Resource": "arn:aws:s3:::cisco-secure-monitoring-961457613870-ap-south-1"
+    },
+    {
+      "Sid": "WriteCollectorArchives",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:PutObject",
+        "s3:AbortMultipartUpload"
+      ],
+      "Resource": "arn:aws:s3:::cisco-secure-monitoring-961457613870-ap-south-1/collector/*"
+    }
+  ]
+}

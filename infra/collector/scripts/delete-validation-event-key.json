@@ -1,0 +1,8 @@
+{
+  "partitionKey": {
+    "S": "SECURITY_EVENTS"
+  },
+  "sortKey": {
+    "S": "2026-04-08T16:33:29.573Z#5942dbcf-d535-4904-ab73-dbbad29531a7"
+  }
+}

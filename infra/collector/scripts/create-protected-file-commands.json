@@ -1,0 +1,7 @@
+{
+  "commands": [
+    "sudo mkdir -p /opt/protected-source",
+    "sudo bash -lc 'printf \"%s\\n\" \"Secure Cloud Workload Note\" \"Region: ap-south-1\" \"VPC: vpc-0674422f23a65f05f\" \"Instance: i-0196594d0ab6ada82\" \"Private IP: 172.31.39.53\" \"Purpose: Protected monitoring collector and secured workload demonstration\" \"Access: Viewer-authenticated portal only\" > /opt/protected-source/secure-workload-note.txt'",
+    "sudo chmod 640 /opt/protected-source/secure-workload-note.txt"
+  ]
+}

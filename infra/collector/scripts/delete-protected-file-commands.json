@@ -1,0 +1,5 @@
+{
+  "commands": [
+    "sudo rm -f /opt/protected-source/secure-workload-note.txt"
+  ]
+}
